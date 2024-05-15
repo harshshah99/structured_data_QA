@@ -33,6 +33,10 @@
 ├── update_all_data.py - Updates all the schemas in api_cache/, embeddings in vector_db/ (takes around 5-10 mins to run but is not needed to run everytime since API schemas don't change so often)
 └── vector_db - Contains Chroma vector embeddings
 ```
+## Application Diagram
+
+Design Diagram for this application - [application_diagram](application_diagram.pdf) 
+
 
 ## Environment Variables
 
