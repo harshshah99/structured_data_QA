@@ -23,14 +23,14 @@
 ├── llm_chain - Langchain project for LLM related endpoints. Deploys a fastapi langserve server which we can use for LLM/Chain related tasks
 │   ├── README.md
 │   ├── app
-│   ├── llm_constants.py
+│   ├── llm_config.py - contains config values for LLM - Openai key, local LLM, etc 
 │   ├── packages
 │   ├── pyproject.toml
 │   ├── query_helper
 │   └── trial
 ├── main.py - The main script to run QA on structured data (Assuming data can be fetched from one of the MERGE APIs)
 ├── requirements.txt
-├── update_all_data.py - Updates all the schemas in api_cache/, embeddings in vector_db/ (takes around 5-10 mins to run but is not needed to run everytime since API schemas don't change so often)
+├── update_all_data.py - Updates all the schemas in api_cache/, embeddings in vector_db/ 
 └── vector_db - Contains Chroma vector embeddings
 ```
 ## Application Diagram
