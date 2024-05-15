@@ -1,0 +1,7 @@
+#!/bin/bash
+eval "$(conda shell.bash hook)"
+source ~/miniconda3/etc/profile.d/conda.sh
+eval $(cat .env | egrep -v '^#' | sed '/^[[:space:]]*$/d' | xargs -0)
+
+conda activate project
+langchain serve --port $LANGSERVE_PORT 

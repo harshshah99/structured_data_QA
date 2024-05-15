@@ -1,0 +1,8 @@
+#!/bin/bash
+eval "$(conda shell.bash hook)"
+source ~/miniconda3/etc/profile.d/conda.sh
+conda create -n project python=3.12.3
+conda activate project
+
+pip install -r requirements.txt
+pip install langchain-cli

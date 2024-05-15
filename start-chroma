@@ -1,0 +1,7 @@
+#!/bin/bash
+eval "$(conda shell.bash hook)"
+source ~/miniconda3/etc/profile.d/conda.sh
+eval $(cat .env | egrep -v '^#' | sed '/^[[:space:]]*$/d' | xargs)
+
+conda activate project
+chroma run --path vector_db/ --port $CHROMADB_PORT
