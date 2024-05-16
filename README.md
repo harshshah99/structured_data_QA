@@ -117,3 +117,4 @@ There is also an [example notebook](example_notebook.ipynb) present, containing 
 - Having the OpenAI Client as an LLM endpoint inside langserve would package all LLM related functionality in one place
 - Currently, LOGGER is used to print directly into the console to see the flow
 - Using a better quality embedding model. With chroma, custom sentence transformer models were erroring out. The current embeddings are from `all-MiniLM-L6-v2`. Using a model trained on code would yield better embeddings and thus more accurate tool calls
+- For now it only takes in a complex question and gets back the answer. A chat like functionality where the user can ask the questions in a conversational format, can be achieved by wrapping the current complete pipeline inside a chat loop (also helps with an incomplete question, which can be completed by asking for more details before the agent begins the answering process)
